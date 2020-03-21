@@ -1,9 +1,17 @@
 .homepage-image {
     @include media-breakpoint-up(lg) {
-        position: absolute;
-        width: 400px;
-        right: 100px;
-        top: 0;
+    }
+}
+
+.hero {
+
+    flex-direction: column;
+
+    @include media-breakpoint-up(lg) {
+        .homepage-image {
+            max-width: 450px;
+        }
+        flex-direction: row-reverse;
     }
 }
 
